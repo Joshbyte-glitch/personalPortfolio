@@ -4,7 +4,7 @@ import { Cloud } from 'lucide-react';
 import {
   SiJavascript, SiTypescript, SiPython, SiRust, SiSupabase,
   SiReact, SiNodedotjs, SiExpress, SiNextdotjs, SiGraphql,
-  SiPostgresql, SiDocker, SiKubernetes, SiGit, SiLinux
+  SiPostgresql, SiDocker, SiKubernetes, SiGit, SiFigma
 } from 'react-icons/si';
 
 export default function Skills() {
@@ -36,6 +36,7 @@ export default function Skills() {
         { name: 'Supabase', icon: <SiSupabase /> },
         { name: 'AWS', icon: <Cloud size={16} /> },
         { name: 'Git', icon: <SiGit /> },
+        { name: 'Figma', icon: <SiFigma /> },
       ]
     }
   ];
