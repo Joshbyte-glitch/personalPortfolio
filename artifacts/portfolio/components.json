@@ -16,5 +16,11 @@
       "ui": "@/components/ui",
       "lib": "@/lib",
       "hooks": "@/hooks"
-    }
+    },
+    
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  }
+
 }
