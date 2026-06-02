@@ -1,0 +1,92 @@
+You are a senior frontend engineer and UI/UX designer. Build me a complete, 
+industry-level personal developer portfolio using ONLY the following tech stack:
+
+TECH STACK (strictly enforced):
+- React (functional components, hooks)
+- Plain CSS (no Tailwind, no CSS-in-JS, no UI libraries)
+- Vanilla JavaScript (where needed)
+- HTML5 semantics
+
+FILE STRUCTURE (clean, flat, no bloat):
+src/
+  components/
+    Navbar.jsx
+    Hero.jsx
+    About.jsx
+    Skills.jsx
+    Projects.jsx
+    Contact.jsx
+    Footer.jsx
+  styles/
+    global.css
+    navbar.css
+    hero.css
+    about.css
+    skills.css
+    projects.css
+    contact.css
+    footer.css
+  App.jsx
+  main.jsx
+index.html
+
+NO: TypeScript, Tailwind, styled-components, SASS/SCSS, 
+    Redux, React Router (use single-page scroll), 
+    external component libraries, or build-tool configs 
+    beyond standard Vite + React.
+
+SECTIONS TO BUILD:
+1. Navbar — sticky, with smooth scroll links, animated hamburger 
+   menu for mobile, name/logo on the left
+2. Hero — bold headline with name + role, short tagline, CTA buttons 
+   ("View Work" / "Contact Me"), animated entrance, optional 
+   subtle background effect
+3. About — two-column layout: left = photo placeholder or ASCII/SVG 
+   avatar, right = bio paragraph + key facts (location, availability, 
+   experience years)
+4. Skills — categorized grid (Languages, Frameworks, Tools/DevOps), 
+   each skill shown as a clean badge/pill with icon or label
+5. Projects — card grid (3–6 cards), each with: project name, short 
+   description, tech tags, live demo link, GitHub link, hover overlay 
+   animation
+6. Contact — minimal form (Name, Email, Message) + social links 
+   (GitHub, LinkedIn, Email), no backend needed, show a 
+   success/error UI state
+7. Footer — minimal, with copyright and social icons
+
+DESIGN REQUIREMENTS (industry-level, NOT generic AI output):
+- Choose ONE strong aesthetic direction and execute it perfectly. 
+  Examples: refined dark theme with amber accents, editorial 
+  monochrome with red highlights, soft cream/sand with serif 
+  typography — pick ONE and commit.
+- Use CSS custom properties (--variables) for all colors, spacing, 
+  and typography tokens
+- Custom Google Font pairing: one display font for headings, one 
+  humanist or geometric sans for body — never Inter, Roboto, or Arial
+- Smooth scroll behavior on all anchor links
+- Scroll-triggered fade/slide-in animations using IntersectionObserver
+- Hover micro-interactions on all interactive elements
+- Fully responsive: mobile-first, breakpoints at 768px and 1200px
+- Keyboard accessible, proper ARIA labels, semantic HTML throughout
+- No horizontal scroll on any viewport
+- Section IDs for smooth navigation: #hero, #about, #skills, 
+  #projects, #contact
+
+CODE QUALITY:
+- Each component is self-contained (JSX + imports its own CSS)
+- No inline styles
+- Clean, commented code where logic is non-obvious
+- Consistent naming: PascalCase components, kebab-case CSS classes
+- CSS follows BEM-lite naming: .section, .section__title, 
+  .section__content, .card, .card__body etc.
+- All images use placeholder services (picsum.photos or placehold.co) 
+  — no broken image links
+- Performance: no unnecessary re-renders, passive scroll listeners
+
+DELIVERABLE:
+Provide ALL files in full, one by one, starting with 
+index.html → main.jsx → App.jsx → global.css → then each 
+component + its CSS. Every file must be complete and production-ready. 
+No placeholders like "// add your code here". 
+Final result must be copy-paste runnable with `npm create vite@latest` 
+React setup.
