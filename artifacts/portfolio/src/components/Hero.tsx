@@ -14,14 +14,16 @@ export default function Hero() {
           <span className="hero__title-highlight">matters.</span>
         </h1>
         <p className={`hero__subtitle animate-fade-up ${isIntersecting ? 'is-visible' : ''}`} style={{ animationDelay: '100ms' }}>
-          Full-Stack Developer · Open Source Contributor · Problem Solver
+          Developer · Open Source Contributor · Problem Solver
         </p>
         <p className={`hero__tagline animate-fade-up ${isIntersecting ? 'is-visible' : ''}`} style={{ animationDelay: '200ms' }}>
           Crafting resilient, high-performance systems and intuitive user experiences.
         </p>
         <div className={`hero__ctas animate-fade-up ${isIntersecting ? 'is-visible' : ''}`} style={{ animationDelay: '300ms' }}>
           <a href="#projects" className="btn btn--primary">View My Work</a>
+          <a href="#CV" className="btn btn--primary">View CV</a>
           <a href="#contact" className="btn btn--secondary">Say Hello</a>
+
         </div>
       </div>
     </section>

@@ -37,6 +37,7 @@ export default function Sidebar() {
         <nav className="sidebar__nav">
           <a href="#hero" className="sidebar__link">Home</a>
           <a href="#skills" className="sidebar__link">Skills</a>
+          <a href="#cv" className="sidebar__link">Resume</a>
           <a href="#projects" className="sidebar__link">Projects</a>
           <a href="#contact" className="sidebar__link">Contact</a>
         </nav>

@@ -3,8 +3,8 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { Cloud } from 'lucide-react';
 import {
   SiJavascript, SiTypescript, SiPython, SiRust, SiSupabase,
-  SiReact, SiNodedotjs, SiExpress, SiNextdotjs, SiGraphql,
-  SiPostgresql, SiDocker, SiKubernetes, SiGit, SiFigma
+  SiReact, SiNodedotjs, SiExpress, SiNextdotjs,
+  SiPostgresql, SiKubernetes, SiGit, SiFigma
 } from 'react-icons/si';
 
 export default function Skills() {
@@ -23,21 +23,18 @@ export default function Skills() {
       title: 'Frameworks & Libraries',
       skills: [
         { name: 'React', icon: <SiReact /> },
+
         { name: 'Node.js', icon: <SiNodedotjs /> },
         { name: 'Express', icon: <SiExpress /> },
-        { name: 'Next.js', icon: <SiNextdotjs /> },
-      ]
+        { name: 'Next.js', icon: <SiNextdotjs /> },      ]
     },
     {
       title: 'Tools & DevOps',
       skills: [
         { name: 'PostgreSQL', icon: <SiPostgresql /> },
-        { name: 'Docker', icon: <SiDocker /> },
         { name: 'Supabase', icon: <SiSupabase /> },
-        { name: 'AWS', icon: <Cloud size={16} /> },
         { name: 'Git', icon: <SiGit /> },
-        { name: 'Figma', icon: <SiFigma /> },
-      ]
+        { name: 'Figma', icon: <SiFigma /> },      ]
     }
   ];
 

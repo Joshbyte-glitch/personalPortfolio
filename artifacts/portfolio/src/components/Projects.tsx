@@ -1,6 +1,5 @@
 import '../styles/projects.css';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import { ExternalLink, Github } from 'lucide-react';
 
 export default function Projects() {
   const { targetRef, isIntersecting } = useIntersectionObserver();
@@ -13,29 +12,23 @@ export default function Projects() {
       tags: ['React', 'WebSockets', 'Node.js', 'Redis'],
       image: '/kioskonnket.png'
     },
+  
     {
       id: 2,
-      name: 'See and Smile Dental Services',
-      description: 'See and Smile is a convenient online booking platform for quality dental services. Easily schedule appointments, choose your preferred dentist, and manage your dental care with just a few clicks.',
-      tags: ['Go', 'Prometheus', 'React', 'PostgreSQL'],
-      image: '/see and smile.png'
-    },
-    {
-      id: 3,
       name: 'Petcare E-Commerce Website',
       description: 'Petcare is a one-stop e-commerce platform dedicated to pet lovers. Shop premium pet food, supplies, accessories, and grooming products with fast delivery and expert pet care recommendations.',
       tags: ['Python', 'FastAPI', 'OpenAI', 'Next.js'],
       image: '/petcare.png'
     },
     {
-      id: 4,
+      id: 3,
       name: 'Sabay Sayaw',
       description: 'An energetic rhythm game where you must master the rhythm by flawlessly matching arrow keys. Test your timing and musical skills against increasingly challenging patterns.',
       tags: ['Rust', 'AWS', 'Terraform', 'CLI'],
       image: '/sabaysayaw.png'
     },
     {
-      id: 5,
+      id: 4,
       name: 'Valenzuela Community Feedback',
       description: 'Valenzuela Community Feedback is a platform that allows residents to share their concerns, suggestions, and experiences with local government services.',  
       tags: ['TypeScript', 'React', 'Node.js', 'Figma API'],
@@ -68,23 +61,6 @@ export default function Projects() {
             <div className="card__content">
               <h3 className="card__title">{project.name}</h3>
               <p className="card__description">{project.description}</p>
-
-              <div className="card__tags">
-                {project.tags.map(tag => (
-                  <span key={tag} className="card__tag">{tag}</span>
-                ))}
-              </div>
-
-              <div className="card__actions">
-                <a href="#" className="card__btn" aria-label={`View ${project.name} live demo`} data-testid={`link-demo-${project.id}`}>
-                  <ExternalLink size={16} />
-                  <span>Live Demo</span>
-                </a>
-                <a href="#" className="card__btn" aria-label={`View ${project.name} on GitHub`} data-testid={`link-github-${project.id}`}>
-                  <Github size={16} />
-                  <span>GitHub</span>
-                </a>
-              </div>
             </div>
           </div>
         ))}
